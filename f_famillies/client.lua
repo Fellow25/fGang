@@ -236,7 +236,7 @@ local PlayersItem = {}
 function FDeposerobjet()
     local DepositFamillies = RageUI.CreateMenu("Coffre", "Famillies")
 	ESX.TriggerServerCallback('famillies:getPlayerInventory', function(inventory)
-        RageUI.Visible(StockFamillies, not RageUI.Visible(StockFamillies))
+        RageUI.Visible(DepositFamillies, not RageUI.Visible(DepositFamillies))
     while DepositFamillies do
         Citizen.Wait(0)
             RageUI.IsVisible(DepositFamillies, true, true, true, function()
